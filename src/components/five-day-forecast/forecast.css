@@ -1,0 +1,39 @@
+.five-day-forecast {
+  margin-top: 26px;
+}
+
+.day-forecast-card {
+  border-radius: 20px;
+}
+
+.day-forecast-card .fa-cloud-sun {
+  font-size: 50px;
+}
+
+.day-forecast-card h6 {
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.day-forecast-card span:nth-child(2) {
+  color: #9d9b9b;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.day-forecast-card .card-body {
+  text-align: center;
+  padding: 27px 40px !important;
+}
+
+.day-forecast-card.active {
+  background: #0f3443;
+}
+
+.day-forecast-card.active h6 {
+  color: #fff;
+}
+
+.day-forecast-card.active span {
+  color: #34e89e !important;
+}

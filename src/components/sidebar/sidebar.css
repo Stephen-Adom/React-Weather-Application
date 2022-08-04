@@ -1,0 +1,112 @@
+.sidenav {
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+
+.sidenav .input-icon {
+  width: 200px;
+}
+
+.sidenav .input-icon .form-control {
+  height: 40px;
+  border-radius: 12px;
+  background: #eceef6;
+  border: none;
+}
+
+.sidenav .info-name svg {
+  font-size: 13px !important;
+}
+
+.current-location-weather-card {
+  background: #0f3443;
+  border-radius: 14px;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.current-location-weather-card .cityName {
+  position: absolute;
+  color: #fff;
+  top: 16px;
+  left: 20px;
+  font-size: 18px;
+}
+
+.current-location-weather-card .card-body {
+  text-align: center;
+  padding: 40px 60px !important;
+}
+
+.current-location-weather-info {
+  margin-top: 26px;
+}
+
+.current-location-weather-card .weather-icon img {
+  width: 100%;
+}
+
+.vertical-height {
+  width: 1px;
+  height: 18px;
+  background: #fff;
+}
+
+.current-weather-summary {
+  margin-top: 26px;
+}
+
+.current-weather-summary .weather-info-card {
+  background: #0f3443;
+  border-radius: 18px;
+  margin: 8px auto;
+  width: 80%;
+}
+
+.weather-info-card .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px !important;
+}
+
+.weather-info-card .card-body svg {
+  color: #34e89e;
+  font-size: 26px;
+}
+
+.weather-info-card .info-name {
+  color: #eeeeee;
+  font-size: 13px;
+}
+
+.weather-info-card .info-value {
+  font-size: 21px;
+  color: #fff;
+}
+
+.sideInfo {
+  padding: 0 10px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 10px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}

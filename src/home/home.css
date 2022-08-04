@@ -1,0 +1,37 @@
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px 30px 20px 40px;
+  margin-right: 400px;
+  background: #eceef6;
+}
+
+.main-content-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.main-content-header .display-3 {
+  color: #34e89e;
+  font-weight: 500;
+}
+
+.greeting-section {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.greeting-section svg.fa-sun {
+  font-size: 30px;
+  color: goldenrod;
+}
+
+.greeting-section svg.fa-moon {
+  font-size: 30px;
+  color: #0f3443;
+}
+
+.greeting-section h4 {
+  color: #0f3443;
+}
