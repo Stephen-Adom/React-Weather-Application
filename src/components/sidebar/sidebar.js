@@ -185,7 +185,7 @@ function Sidebar() {
           <span className="d-block weather-icon">
             <img
               src={
-                "http://openweathermap.org/img/w/" +
+                "https://openweathermap.org/img/w/" +
                 weatherInfo.weather[0].icon +
                 ".png"
               }

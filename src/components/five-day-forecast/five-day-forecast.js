@@ -51,7 +51,7 @@ function FiveDayForecast() {
               <span className="d-block">
                 <img
                   src={
-                    "http://openweathermap.org/img/w/" +
+                    "https://openweathermap.org/img/w/" +
                     filtered.weather[0].icon +
                     ".png"
                   }
