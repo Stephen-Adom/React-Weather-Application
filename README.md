@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View Demo](https://stephen-adom.github.io/tip-calculator)
+- Live Site URL: [View Demo](https://react-weather-application-eight.vercel.app/)
 
 ### Built with
 
@@ -44,5 +44,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Stephen Addom Addae](https://stephen-adom.github.io/tip-calculator)
+- Website - [Stephen Addom Addae](https://react-weather-application-eight.vercel.app/)
 - Twitter - [@Alaska67524884](https://twitter.com/Alaska67524884)
