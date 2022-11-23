@@ -27,7 +27,6 @@ function Sidebar() {
       return state.weather.weatherInfo;
     }
   });
-  const BaseKey = process.env.REACT_APP_API_KEY;
   const [location, setLocation] = useState(null);
   const [searchValue, setSearchValue] = useState(new BehaviorSubject(""));
   const [loading, setLoading] = useState(false);
@@ -54,22 +53,20 @@ function Sidebar() {
     if (location) {
       // FETCH WEATHER FORECAST
       function getWeatherInfo(location) {
-        fetchCurrentWeather(
-          BaseKey,
-          location.latitude,
-          location.longitude
-        ).then((response) => {
-          if (response.status === 200) {
-            console.log(response["data"]);
-            dispatch(fetchWeather(response.data));
+        fetchCurrentWeather(location.latitude, location.longitude).then(
+          (response) => {
+            if (response.status === 200) {
+              console.log(response["data"]);
+              dispatch(fetchWeather(response.data));
+            }
           }
-        });
+        );
       }
 
       getWeatherInfo(location);
     }
     // console.log(location, "location");
-  }, [BaseKey, dispatch, location]);
+  }, [dispatch, location]);
 
   useEffect(() => {
     searchValue
@@ -81,11 +78,11 @@ function Sidebar() {
       )
       .subscribe((city) => {
         setLoading(true);
-        fetchCurrentWeatherByCityName(city, BaseKey)
+        fetchCurrentWeatherByCityName(city)
           .then((response) => {
             setLoading(false);
             dispatch(fetchWeather(response.data));
-            return fetchForecastByCityName(city, BaseKey);
+            return fetchForecastByCityName(city);
           })
           .then((forecastResponse) => {
             setLoading(false);
@@ -112,7 +109,7 @@ function Sidebar() {
             console.log(error);
           });
       });
-  }, [BaseKey, dispatch, searchValue]);
+  }, [dispatch, searchValue]);
 
   // CONVERT TIME TO USER TIMEZONE
   function convertTime(unixTime, offset) {

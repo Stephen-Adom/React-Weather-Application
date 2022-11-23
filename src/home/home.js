@@ -15,8 +15,6 @@ class Home extends Component {
     this.state = {
       forecasts: [],
     };
-
-    this.BASEKey = process.env.REACT_APP_API_KEY;
   }
 
   componentDidMount = () => {
@@ -69,7 +67,7 @@ class Home extends Component {
   }
 
   getFutureForecast(latitude, longitude) {
-    fetchWeatherForecast(this.BASEKey, latitude, longitude)
+    fetchWeatherForecast(latitude, longitude)
       .then((response) => {
         if (response.status === 200) {
           this.props.fetchForecastList(response.data.list);
