@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1><bWeather Application</b></h1>
+  <h1><b>Weather Application</b></h1>
 
 </div>
 
