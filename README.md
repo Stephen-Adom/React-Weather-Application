@@ -33,7 +33,7 @@
 
 ## 📖 Project Summary <a name="about-project"></a>
 
-A weather app that pulls from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide. Built with React, prime react apex chart and rxjs
+The weather app project is a web-based application that allows users to check weather forecasts for different locations. Built using the React library, RxJS, PrimeReact, Apex Chart, a real live clock, and the OpenWeatherMap API, the project offers a highly responsive on desktop screen and modern user interface. Users can search for the weather information of any city in the world and get accurate and up-to-date weather data. The application also features an interactive dashboard with a real-time clock, making it easy for users to check the current time and weather in their location. Additionally, the application provides a detailed weather forecast for the next few days, along with weather-related charts and graphics to help users understand weather trends.
 
 ### Screenshot
 
