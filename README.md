@@ -31,7 +31,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-## 📖 Project Overview <a name="about-project"></a>
+## 📖 Project Summary <a name="about-project"></a>
 
 A weather app that pulls from the OpenWeatherMap API to allow users to search for and view the forecast in cities worldwide. Built with React, prime react apex chart and rxjs
 
